@@ -10,8 +10,22 @@ export default function Page() {
   }
 
   return (
-    <pre style={{ padding: 16 }}>
-      {JSON.stringify(project, null, 2)}
-    </pre>
+    <div style={{ padding: 16 }}>
+      <h2>Project Created</h2>
+
+      <pre
+        style={{
+          marginTop: 12,
+          padding: 12,
+          background: '#111',
+          color: '#0f0',
+          fontSize: 12,
+          overflowX: 'auto',
+          borderRadius: 8,
+        }}
+      >
+        {JSON.stringify(project, null, 2)}
+      </pre>
+    </div>
   )
 }
